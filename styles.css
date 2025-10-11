@@ -1,28 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: aliceblue;
-    font-family: "Space Grotesk", sans-serif;
-    font-optical-sizing: auto;
+    font-family: 'BBH Sans Bartle', 'Space Grotesk', sans-serif;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
     width: 90%;
-    margin: 0 auto;
-    padding-top: 60px;
 }
 
 hr {
-    border: 0;
-    height: 1px;
-    background: #333;
-    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+    border: 1 dashed white;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding: 30px 30px 10px 30px;
+    margin: 60px 0px 20px 0px;
 }
 
 .avatar {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    transition: transform 0.2s;   
+    transition: transform 0.2s;
+    margin-left: 300px;
 }
 
 .avatar:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+.name h1 {
+    font-size: 42px;
+}
+
+.bio_p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.linkedin {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#aboutme {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.aboutme_h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.description {
+    font-family: 'Space Grotesk', sans-serif;
+    text-align: start;
+    margin-left: 150px;
+    margin-bottom: 20px;    
+    font-size: 16px;
+}
+
+#hobbies {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hobby_h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.spotify {
+    border-radius: 12px;
+    display: block;
+    margin-left: 150px;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.gallery_div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.gallery_h2 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 table {
@@ -48,30 +133,92 @@ form {
 }
 
 input:focus, textarea:focus, select:focus {
-    outline: 2px solid #00889d;
+    outline: 2px solid #8d0000;
     border-radius: 5px;
 }
 
 .nav {
-    background-color: #00889d;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #ffffff;
     margin: auto;
-    padding: 10px;
+    padding: 20px;
     position: fixed;
     top: 0;
     right: 0; 
     left: 0;
+    z-index: 1000;
     bottom: auto;
     width: 100%;
 }
 
-nav {
+.navbar {
     text-align: center;
     color: #ffffff;
     text-transform: uppercase;
 }
 
 a:link, a:visited {
-    color: #ffffff;
+    color: #00aac4;
     text-decoration: none;
 }
 
+a:link:hover, a:visited:hover {
+    color: #8d0000;
+    text-decoration: none;
+}
+
+/*  
+!important p.s this is incomplete version of my project, ignore all errors and mistakes, I will fix them later.
+
+To do:
+
+CSS Styling (Week 03 Objectives)
+Apply CSS to your website:
+Use at least one pseudo-element (::before, ::after).
+Try using at least one Google Font.
+
+
+Part 2: CSS Layouts (Week 04 Objectives)
+You will practice different layout techniques. To clearly see the differences, you must implement the same content using different approaches.
+Choose either of the two options below:
+Option A: Multiple Versions of the Same Page
+Pick one content page (e.g., Weekly Schedule, Education, or Gallery).
+Create three different versions of that page:
+Float + Position layout
+Flexbox layout
+Grid layout
+Option B: Different Layout Per Page
+Use Float + Position to design one page.
+Use Flexbox to design another page.
+Use Grid to design a third page.
+
+
+Part 4: Gallery & Responsiveness
+Add a Photo Gallery page with at least 3–4 pictures (yourself, hobbies, or projects).
+Make it responsive using media queries:
+Desktop: 3 images per row
+Mobile: 1 image per row
+
+
+Part 5: Introduction to Bootstrap 
+Add Bootstrap to your project (via CDN link in your <head>).
+Redesign or enhance at least one of your existing pages (e.g., Home, Education, Gallery, or Contact) using Bootstrap classes.
+Use at least:
+A Bootstrap grid system (rows + columns).
+At least one Bootstrap component (e.g., buttons, navbar, card, form).
+A Bootstrap utility class (e.g., spacing, text alignment, background color).
+Compare the Bootstrap version of your page with the custom CSS version:
+What did Bootstrap make easier?
+What was harder or more restrictive?
+
+
+
+Part 6: Deployment & Documentation
+Create a README.md file in your repository.
+The README must briefly describe:
+What you have done in this project
+What you learned while doing it
+What the purpose of the website is (personal page, practice project, portfolio, etc.)
+Push your updated project to GitHub on top of your previous Capstone (do not delete the old history).
+Re-deploy your website using GitHub Pages, overwriting the previous version.
+Share the new live link with the others, get their feedback and further improve it.*/

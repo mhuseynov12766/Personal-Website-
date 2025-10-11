@@ -10,37 +10,41 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="nav">
-        <nav>
-            <a href="index.html">Home</a> |
-            <a href="education.html">Education</a> |
-            <a href="schedule.html">Weekly Schedule</a> |
-            <a href="contact.html">Contact Me</a> |
+        <nav class="navbar">
+            <a href="index.html">Home</a> 
+            <a href="education.html">Education</a> 
+            <a href="schedule.html">Weekly Schedule</a> 
+            <a href="contact.html">Contact Me</a> 
             <a href="questionnaire.html">Questionnaire</a> 
         </nav>
     </div>
-    <img src="Media/Avatar.jpeg" alt="Avatar" class="avatar" style="width:200px;height:200px;border-radius:50%;">
-    <header>
-        <h1>Murad Huseynov</h1>
-        <p>Student and IT Specialist intern at ADA University &#128187;</p>
-        <a href="https://www.linkedin.com/in/muradelchinhuseynov/" target="_blank">My LinkedIn</a>
+    <header class="bio">   
+        <img class="avatar" src="Media/Avatar.jpeg" alt="Avatar" style="width:200px;height:200px;border-radius:50%;">
+        <span class="name">
+            <h1>MURAD HUSEYNOV</h1>
+            <p class="bio_p">Student and IT Specialist intern at ADA University &#128187;</p>
+            <a class="linkedin" href="https://www.linkedin.com/in/muradelchinhuseynov/" target="_blank">MY LINKEDIN</a>
+        </span>
     </header>
     <hr>
     <section id="aboutme">
-        <h2>About Me</h2>
-        <ul>
-            <li>Cybersecurity Bug Bounty researcher</li>
-            <li>Web Developer</li>
-            <li>Electronic Music Producer</li>
-        </ul> 
+        <h2 class="aboutme_h2">About Me</h2>
+        <div class="description">
+            <ul>
+                <li>Cybersecurity Bug Bounty researcher</li>
+                <li>Web Developer</li>
+                <li>Electronic Music Producer</li>
+            </ul> 
+        </div>
     </section>
     <hr>
     <section id="hobbies">
-        <h2 class="hobby">Check My Artist Profile</h2>
-        <iframe 
+        <h2 class="hobby_h2">Check My Artist Profile</h2>
+        <iframe class="spotify"
                 src="https://open.spotify.com/embed/artist/6nMSuoMLsurjoohfOl2koz" 
                 width="300" 
                 height="380" 
@@ -51,8 +55,8 @@
     </section>
     <hr>
     </section id="gallery">
-    <div>
-        <h2>Gallery</h2>
+    <div class="gallery_div">
+        <h2 class="gallery_h2">Gallery</h2>
         <img src="Media/Baku.jpeg" alt="Baku" class="photo" style="max-width:30%; height:auto;">
         <img src="Media/Underground.jpeg" alt="Underground" class="photo" style="max-width:30%; height:auto;"> 
     </div>
