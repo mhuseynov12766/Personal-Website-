@@ -1,65 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Murad Huseynov">
-    <meta name="description" content="Murad Huseynov's personal Web page">
-    <title>Murad Huseynov | About Me</title>
-    <link rel="icon" href="./favicon.ico" type="image/x-icon"> 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Murad Huseynov" />
+  <meta name="description" content="Murad Huseynov's personal Web page" />
+  <title>Murad Huseynov | About Me</title>
+
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bartle&family=Space+Grotesk:wght@300..700&display=swap"
+    rel="stylesheet"
+  />
 </head>
+
 <body>
-    <div class="nav">
-        <nav class="navbar">
-            <a href="index.html">Home</a> 
-            <a href="education.html">Education</a> 
-            <a href="schedule.html">Weekly Schedule</a> 
-            <a href="contact.html">Contact Me</a> 
-            <a href="questionnaire.html">Questionnaire</a> 
-        </nav>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="education.html">Education</a>
+    <a href="schedule.html">Weekly Schedule</a>
+    <a href="contact.html">Contact Me</a>
+    <a href="questionnaire.html">Questionnaire</a>
+  </nav>
+
+  <!-- ===== HEADER / BIO ===== -->
+  <header class="bio">
+    <img class="avatar" src="Media/Avatar.jpeg" alt="Avatar" />
+    <div class="info">
+      <h1>MURAD HUSEYNOV</h1>
+      <p>Student and IT Specialist intern at ADA University 💻</p>
+      <a href="https://www.linkedin.com/in/muradelchinhuseynov/" target="_blank"
+        >My LinkedIn</a
+      >
     </div>
-    <header class="bio">   
-        <img class="avatar" src="Media/Avatar.jpeg" alt="Avatar" style="width:200px;height:200px;border-radius:50%;">
-        <span class="name">
-            <h1>MURAD HUSEYNOV</h1>
-            <p class="bio_p">Student and IT Specialist intern at ADA University &#128187;</p>
-            <a class="linkedin" href="https://www.linkedin.com/in/muradelchinhuseynov/" target="_blank">MY LINKEDIN</a>
-        </span>
-    </header>
-    <hr>
+  </header>
+
+  <main>
+    <!-- ===== ABOUT ===== -->
     <section id="aboutme">
-        <h2 class="aboutme_h2">About Me</h2>
-        <div class="description">
-            <ul>
-                <li>Cybersecurity Bug Bounty researcher</li>
-                <li>Web Developer</li>
-                <li>Electronic Music Producer</li>
-            </ul> 
-        </div>
+      <h2>About Me</h2>
+      <ul>
+        <li>Cybersecurity Bug Bounty researcher</li>
+        <li>Web Developer</li>
+        <li>Electronic Music Producer</li>
+      </ul>
     </section>
-    <hr>
+
+    <hr />
+
+    <!-- ===== HOBBIES ===== -->
     <section id="hobbies">
-        <h2 class="hobby_h2">Check My Artist Profile</h2>
-        <iframe class="spotify"
-                src="https://open.spotify.com/embed/artist/6nMSuoMLsurjoohfOl2koz" 
-                width="300" 
-                height="380" 
-                frameborder="0" 
-                allowtransparency="true" 
-                allow="encrypted-media">
-        </iframe>
+      <h2>Check My Artist Profile</h2>
+      <iframe
+        src="https://open.spotify.com/embed/artist/6nMSuoMLsurjoohfOl2koz"
+        width="300"
+        height="380"
+        frameborder="0"
+        allow="encrypted-media"
+      ></iframe>
     </section>
-    <hr>
-    </section id="gallery">
-    <div class="gallery_div">
-        <h2 class="gallery_h2">Gallery</h2>
-        <img src="Media/Baku.jpeg" alt="Baku" class="photo" style="max-width:30%; height:auto;">
-        <img src="Media/Underground.jpeg" alt="Underground" class="photo" style="max-width:30%; height:auto;"> 
-    </div>
+
+    <hr />
+
+    <!-- ===== GALLERY ===== -->
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="Media/Baku.jpeg" alt="Baku" />
+        <img src="Media/Underground.jpeg" alt="Underground" />
+      </div>
     </section>
+  </main>
 </body>
 </html>
